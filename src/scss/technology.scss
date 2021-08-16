@@ -1,0 +1,62 @@
+.technology {
+
+    &__title {
+      padding-top: 63px;
+      padding-bottom: 52px;
+      text-align: center;
+    }
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 104px;
+      @include media-breakpoint-down (md) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    }
+    &__col {
+      max-width: 255px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 34px;
+      padding-right: 30px;
+
+    }
+    &__icon {
+     width: 117px;
+     height: 120px;
+      padding-bottom: 19px;
+      
+      background-repeat:no-repeat;
+      background-position: center bottom;
+      &-cloud {
+        background-image: url(/img/icons/cloud-download.svg);
+      }
+      &-secure {
+        background-image: url(/img/icons/security.svg);
+      }
+      &-pdf {
+        background-image: url(/img/icons/pdf.svg);
+      }
+      &-csv {
+        background-image: url(/img/icons/csv.svg);
+      }
+
+      span {
+        font-size: 100px;
+        color: rgba(16, 16, 16, 0.08 );
+        font-weight: 700;
+        line-height: 120px;
+      }
+    }
+    &__subtitle {
+      padding-bottom: 10px;
+    }
+    &__text {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      text-align: center;
+    }  
+  }

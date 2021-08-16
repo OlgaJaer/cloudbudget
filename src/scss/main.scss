@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+font-size: 72px;
+font-weight: 700;
+line-height: 86px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+  @include media-breakpoint-down (sm) {
+  font-size: 66px;
+  }
+  @include media-breakpoint-down (xs) {
+  font-size: 36px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 43px;
+  @include media-breakpoint-down (xs) {
+    font-size: 30px;
+    }
+}
+
+h3 {  
+font-size: 18px;
+font-weight: 700;
+line-height: 22px;
+text-align: center;
+}
+
+.btn {
+  width: 160px;
+  height: 50px;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+  
+  &-white {
+    background-color: #fff;
+    color:  #ED4C5C;
+    border: none;
+    font-weight: 600;
+  }
+
+  &-red {
+    background-color: #ED4C5C;
+    color: #fff;
+    font-weight: 400;
+    border: 1px solid #ED4C5C;
+  }
+}
+
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url(../img/bg/hero_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50% ;
+    transform: translate(-50%, -50%); 
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+    @include media-breakpoint-down (xs) {
+      font-size: 30px;
+      font-weight: 400;
+      }
+  }
+}
+.container {
+  max-width: 1110px;
+  padding: 0 10px;
+  margin: 0 auto;
+  height: 100%;
+
+  @include media-breakpoint-down (lg) {max-width: map-get($contanier-width, 'lg');}
+
+  @include media-breakpoint-down (md) {max-width: map-get($contanier-width, 'md');}
+
+}

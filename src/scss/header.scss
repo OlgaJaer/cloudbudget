@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 58px;
+
+  &__col {
+    @include flex-container;
+  }
+  &__btn {
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 11px 28px 12px 29px;
+    border-radius: 6px;
+    border: 1px solid;
+    color: #fff;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.logo {
+  @include flex-container;
+  text-transform: uppercase;
+  
+  &:before {
+    content: url(../img/icons/cloud-logo.svg);
+    margin-right: 10px;
+  }
+ 
+}
+
+.menu {
+  &__icon {
+    display: none;
+    cursor: pointer;
+    @include media-breakpoint-down (md) {
+      display: block;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    @include media-breakpoint-down (md) {
+      display: none;
+    }
+    li {
+      margin-right: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        text-transform: uppercase;
+      }
+      &:hover {
+        border-bottom: 1px solid; 
+      }
+      &:active {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+

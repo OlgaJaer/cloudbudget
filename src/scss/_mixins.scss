@@ -1,0 +1,12 @@
+@mixin flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin media-breakpoint-down($key, $breakpoints: $grid-breakpoints) {
+  $breakpoint: map-get($breakpoints, $key);
+  @media screen and (max-width: $breakpoint) {
+    @content
+  }
+}
