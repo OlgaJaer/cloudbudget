@@ -70,13 +70,13 @@
     width: 32px;
     height: 32px;
     &--appstore {
-      background: url(/img/icons/appstore.svg ) center center no-repeat;
+      background: url(../img/icons/appstore.svg ) center center no-repeat;
     }
     &--google {
-      background: url(/img/icons/google-playstore.svg ) center center no-repeat;
+      background: url(../img/icons/google-playstore.svg ) center center no-repeat;
     }
     &--windows {
-      background: url(/img/icons/windows.svg ) center center no-repeat;
+      background: url(../img/icons/windows.svg ) center center no-repeat;
     }
   }
   &__video {
