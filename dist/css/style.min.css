@@ -465,13 +465,13 @@ h3 {
   height: 32px;
 }
 .download__icon--appstore {
-  background: url(/img/icons/appstore.svg) center center no-repeat;
+  background: url(../img/icons/appstore.svg) center center no-repeat;
 }
 .download__icon--google {
-  background: url(/img/icons/google-playstore.svg) center center no-repeat;
+  background: url(../img/icons/google-playstore.svg) center center no-repeat;
 }
 .download__icon--windows {
-  background: url(/img/icons/windows.svg) center center no-repeat;
+  background: url(../img/icons/windows.svg) center center no-repeat;
 }
 .download__video img {
   border-radius: 15px;
@@ -679,13 +679,13 @@ h3 {
   margin-right: 13px;
 }
 .social__icon-twitter {
-  background: url(/img/icons/twitter.svg) center center no-repeat;
+  background: url(../img/icons/twitter.svg) center center no-repeat;
 }
 .social__icon-fb {
-  background: url(/img/icons/fb.svg) center center no-repeat;
+  background: url(../img/icons/fb.svg) center center no-repeat;
 }
 .social__icon-in {
-  background: url(/img/icons/linkedin.svg) center center no-repeat;
+  background: url(../img/icons/linkedin.svg) center center no-repeat;
 }
 
 .fixed-menu {
