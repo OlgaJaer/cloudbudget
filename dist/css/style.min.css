@@ -360,16 +360,16 @@ h3 {
   background-position: center bottom;
 }
 .technology__icon-cloud {
-  background-image: url(../img/icons/cloud-download.svg);
+  background-image: url(/img/icons/cloud-download.svg);
 }
 .technology__icon-secure {
-  background-image: url(../img/icons/security.svg);
+  background-image: url(/img/icons/security.svg);
 }
 .technology__icon-pdf {
-  background-image: url(../img/icons/pdf.svg);
+  background-image: url(/img/icons/pdf.svg);
 }
 .technology__icon-csv {
-  background-image: url(../img/icons/csv.svg);
+  background-image: url(/img/icons/csv.svg);
 }
 .technology__icon span {
   font-size: 100px;
