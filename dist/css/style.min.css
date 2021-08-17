@@ -355,11 +355,12 @@ h3 {
 .technology__icon {
   width: 117px;
   height: 120px;
-  padding-bottom: 19px;
+  margin-bottom: 19px;
   background-repeat: no-repeat;
   background-position: center bottom;
 }
 .technology__icon-cloud {
+  background-position: center bottom -12px;
   background-image: url(../img/icons/cloud-download.svg);
 }
 .technology__icon-secure {

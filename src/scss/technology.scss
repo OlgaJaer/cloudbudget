@@ -24,13 +24,13 @@
 
     }
     &__icon {
-     width: 117px;
-     height: 120px;
-      padding-bottom: 19px;
-      
+      width: 117px;
+      height: 120px;
+      margin-bottom: 19px;
       background-repeat:no-repeat;
-      background-position: center bottom;
+      background-position: center bottom; 
       &-cloud {
+        background-position: center bottom -12px;
         background-image: url(../img/icons/cloud-download.svg);
       }
       &-secure {
