@@ -5,8 +5,10 @@ let { src, dest, task, series, watch } = require('gulp'),
   cleanCss = require('gulp-clean-css'),
   webp = require('gulp-webp'),
   del = require('del'),
-autoprefixer = require('gulp-autoprefixer');
-let prefixerOptions = {
+  autoprefixer = require('gulp-autoprefixer'),
+  cssmin  = require('gulp-cssnano');
+
+  let prefixerOptions = {
   browsers: ['last 2 versions']
 };
 
@@ -37,8 +39,10 @@ function compileScss() {
     src('./src/scss/style.scss')
       .pipe(scss())
       .pipe(autoprefixer(prefixerOptions))
-      // .pipe(cleanCss())
-      .pipe(rename('style.min.css'))
+      .pipe(rename('style.css'))
+      .pipe(dest('./dist/css'))
+      .pipe(cssmin())
+      .pipe(rename({ suffix: '.min' }))
       .pipe(dest('./dist/css'))
   )
 }
