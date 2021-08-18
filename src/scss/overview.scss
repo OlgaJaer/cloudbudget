@@ -11,10 +11,8 @@
     }
   }
   &__col {
+    @include flex-column;
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     @include media-breakpoint-down(lg){
       width: 80%;
       align-items: center;

@@ -61,7 +61,7 @@
 
 .address {
   &__text {
-    @include flex-container;
+    @include flex-row;
     display: block;
     @include media-breakpoint-down (md) {
       text-align: center;

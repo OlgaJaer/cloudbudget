@@ -4,14 +4,20 @@ let { src, dest, task, series, watch } = require('gulp'),
   rename = require('gulp-rename'),
   cleanCss = require('gulp-clean-css'),
   webp = require('gulp-webp'),
-  del = require('del')
+  del = require('del'),
+autoprefixer = require('gulp-autoprefixer');
+let prefixerOptions = {
+  browsers: ['last 2 versions']
+};
 
   function html() {
   return src('./src/*.html').pipe(dest('./dist'))
 }
 
 function css() {
-  return src('./src/css/*.css').pipe(dest('./dist'))
+  return src('./src/css/*.css').pipe(autoprefixer({
+    cascade: false
+  })).pipe(dest('./dist'))
 }
 
 function imagesWebp() {
@@ -30,6 +36,7 @@ function compileScss() {
   return (
     src('./src/scss/style.scss')
       .pipe(scss())
+      .pipe(autoprefixer(prefixerOptions))
       // .pipe(cleanCss())
       .pipe(rename('style.min.css'))
       .pipe(dest('./dist/css'))

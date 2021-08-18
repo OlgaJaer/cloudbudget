@@ -4,7 +4,7 @@
   padding-top: 58px;
 
   &__col {
-    @include flex-container;
+    @include flex-row;
   }
   &__btn {
     background-color: transparent;
@@ -19,7 +19,7 @@
 }
 
 .logo {
-  @include flex-container;
+  @include flex-row;
   text-transform: uppercase;
   
   &:before {
