@@ -45,7 +45,7 @@
 
   &-link {
     text-decoration: none;
-    color: #ED4C5C;
+    color: $primary-color;
 
   }
 
@@ -54,7 +54,7 @@
     transition: all .3s;
   }
 
-  &--disable:before {
+  &_disable:before {
     content: none;
   }
 }

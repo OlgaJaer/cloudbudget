@@ -31,7 +31,7 @@ h1 {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   @include media-breakpoint-down (sm) {
-    font-size: 66px;
+    font-size: 48px;
   }
   @include media-breakpoint-down (xs) {
     font-size: 36px;
@@ -54,35 +54,58 @@ h3 {
   text-align: center;
 }
 
+p {
+  font-weight: 400;
+}
+
 .btn {
-  width: 160px;
-  height: 50px;
-  padding-top: 17px;
-  padding-bottom: 16px;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
   border-radius: 6px;
   cursor: pointer;
-  &:hover {
-    text-decoration: underline;
-  }
   
-  &-white {
+  &_white {
+    width: 160px;
+    height: 50px;
+    padding-top: 17px;
+    padding-bottom: 16px;
     background-color: #fff;
-    color:  #ED4C5C;
+    color:  $primary-color;
     border: none;
     font-weight: 600;
+    &:hover {
+      background-color: $primary-color;
+      color: #fff;
+      border: 1px solid #fff;
+    }
   }
 
-  &-red {
-    background-color: #ED4C5C;
+  &_red {
+    width: 160px;
+    height: 50px;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    background-color: $primary-color;
     color: #fff;
     font-weight: 400;
-    border: 1px solid #ED4C5C;
+    border: 1px solid #fff;
+    &:hover {
+      background-color: #fff;
+      color: $primary-color;
+      border-color: $primary-color;
+    }
   }
 }
-
+.transition {
+  transition: 1s;
+  &:hover {
+    transition: 1s;
+  }
+  &:not(:hover) {
+    transition: 1s;
+  }
+}
 
 .hero {
   position: relative;
@@ -112,19 +135,24 @@ h3 {
     text-align: center;
     margin-bottom: 60px;
     @include media-breakpoint-down (xs) {
-      font-size: 30px;
       font-weight: 400;
     }
   }
 }
 .container {
-  max-width: 1110px;
+  max-width: 1130px;
   padding: 0 10px;
   margin: 0 auto;
   height: 100%;
 
+  @include media-breakpoint-down (xl) {max-width: map-get($contanier-width, 'xl');}
+
   @include media-breakpoint-down (lg) {max-width: map-get($contanier-width, 'lg');}
 
   @include media-breakpoint-down (md) {max-width: map-get($contanier-width, 'md');}
+
+  @include media-breakpoint-down (sm) {max-width: map-get($contanier-width, 'sm');}
+
+  @include media-breakpoint-down (xs) {max-width: map-get($contanier-width, 'xs');}
 
 }

@@ -10,8 +10,11 @@
     display: flex;
     justify-content: space-between;
     @include media-breakpoint-down (lg) {
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
+      // justify-content: center;
+      flex-direction: column;
       justify-content: center;
+      align-items:center;
     }
   }
   &__col {
@@ -20,10 +23,17 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 124px;
+    @include media-breakpoint-down (lg){
+      max-width: 80%;
+    }
 
     img {
       object-fit: cover;
       height: 250px;
+      @include media-breakpoint-down (lg){
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
   &__card {
@@ -36,6 +46,9 @@
     background-color: #fff;
     box-shadow: 0px 5px 30px 0px #0000001A;
     border-radius: 8px;
+    @include media-breakpoint-down (lg){
+      width: 70%;
+    }
   }
   &__subtitle {
     padding-bottom: 20px;
@@ -46,11 +59,11 @@
     font-weight: 400;
     line-height: 18px;
     padding-bottom: 25px;
-    text-align: justify;
+    text-align: center;
   }
   &__link a {
     font-size: 12px;
-    color: #ED4C5C;
+    color: $primary-color;
     font-weight: 700;
     line-height: 18px;
     &:hover {

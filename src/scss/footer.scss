@@ -6,7 +6,7 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 86px;
+    margin-bottom: 100px;
     @include media-breakpoint-down (md) {
       flex-direction:column;
       justify-content: center;
@@ -55,7 +55,7 @@
     padding-bottom: 11px;
   }
   &__phone {
-    padding-bottom: 22px;
+    padding-bottom: 15px;
   }
 }
 
@@ -85,18 +85,20 @@
   @include media-breakpoint-down (md) {
     justify-content: center;
   }
-  &__icon {
+  &__item {
+    display: flex;
+    justify-content: center;
     width: 14px;
     height: 14px;
-    margin-right: 13px;
-    &-twitter {
-      background: url(../img/icons/twitter.svg ) center center no-repeat;
-    }
-    &-fb {
-      background: url(../img/icons/fb.svg ) center center no-repeat;
-    }
-    &-in {
-      background: url(../img/icons/linkedin.svg ) center center no-repeat;
+    border-radius: 3px;
+    margin-right: 13px;  
+    &:hover {
+      background-color: $primary-color;
+      svg {
+        path {
+          fill: #fff;
+        } 
+      } 
     }
   }
 }

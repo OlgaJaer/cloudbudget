@@ -26,20 +26,20 @@
     &__icon {
       width: 117px;
       height: 120px;
-      margin-bottom: 19px;
+      margin-bottom: 11px;
       background-repeat:no-repeat;
       background-position: center bottom; 
-      &-cloud {
+      &_cloud {
         background-position: center bottom -12px;
         background-image: url(../img/icons/cloud-download.svg);
       }
-      &-secure {
+      &_secure {
         background-image: url(../img/icons/security.svg);
       }
-      &-pdf {
+      &_pdf {
         background-image: url(../img/icons/pdf.svg);
       }
-      &-csv {
+      &_csv {
         background-image: url(../img/icons/csv.svg);
       }
 

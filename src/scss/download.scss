@@ -2,7 +2,7 @@
   padding-top: 94px;
   padding-bottom: 95px;
   color: #fff;
-  background-color: #ED4C5C;
+  background-color: $primary-color;
 
   &__content {
     display: flex;
@@ -21,7 +21,7 @@
       align-items: center;
       text-align: center;
     }   
-    &-left {
+    &_left {
      padding-right: 10%;
      @include media-breakpoint-down(lg){
       padding-right: 0;
@@ -41,43 +41,32 @@
   &__links {
     &-list {
      display: flex;
-     @include media-breakpoint-down(lg){
-      padding-bottom: 30px;
-    }
+      @include media-breakpoint-down(lg){
+        padding-bottom: 30px;
+      }
     }
     &-item {
       width: 32px;
       height: 32px;
-      margin-right: 25px;
+      margin-right: 20px;
     } 
   }
   &__link {
+   @include flex-row;
     width: 32px;
     height: 32px;
     color: #fff;
-    &--app img {
-      width: 28px;
-      height: 28px;
-    }
-    &--windows img {
-      width: 24px;
-      height: 24px;
-    }
-  }
-  &__icon {
-    width: 32px;
-    height: 32px;
-    &--appstore {
-      background: url(../img/icons/appstore.svg ) center center no-repeat;
-    }
-    &--google {
-      background: url(../img/icons/google-playstore.svg ) center center no-repeat;
-    }
-    &--windows {
-      background: url(../img/icons/windows.svg ) center center no-repeat;
+    &:hover {
+      background-color: #fff;
+      svg {
+        path {
+          fill: $primary-color;
+        }
+      } 
     }
   }
-  &__video {
+ 
+  &__img {
     img {
       border-radius: 15px;
     }

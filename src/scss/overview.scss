@@ -19,7 +19,7 @@
       text-align: center;
     }
    
-    &-left {
+    &_left {
      padding-right: 10%;
      @include media-breakpoint-down(lg){
       padding-right: 0;
@@ -41,13 +41,13 @@
       padding-bottom: 30px;
     }
     a {
-      color: #ED4C5C;
+      color: $primary-color;
       &:hover {
         text-decoration: underline;
       }
      } 
   }
-  &__video {
+  &__img {
     img {
       border-radius: 15px;
     }

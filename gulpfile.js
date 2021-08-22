@@ -8,7 +8,7 @@ let { src, dest, task, series, watch } = require('gulp'),
   autoprefixer = require('gulp-autoprefixer'),
   cssmin  = require('gulp-cssnano');
 
-  let prefixerOptions = {
+  let overrideBrowserslist = {
   browsers: ['last 2 versions']
 };
 
@@ -38,7 +38,7 @@ function compileScss() {
   return (
     src('./src/scss/style.scss')
       .pipe(scss())
-      .pipe(autoprefixer(prefixerOptions))
+      .pipe(autoprefixer(overrideBrowserslist))
       .pipe(rename('style.css'))
       .pipe(dest('./dist/css'))
       .pipe(cssmin())

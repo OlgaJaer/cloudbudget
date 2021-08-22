@@ -6,16 +6,23 @@
   &__col {
     @include flex-row;
   }
+  &__col_right {
+    margin-left: 5%;
+    @include media-breakpoint-down (xs) {
+      margin-left: 0;
+    }
+  }
+ 
   &__btn {
     background-color: transparent;
-    text-transform: uppercase;
     padding: 11px 28px 12px 29px;
-    border-radius: 6px;
     border: 1px solid;
     color: #fff;
-    font-size: 14px;
-    line-height: 17px;
-  }
+    &:hover {
+      background-color:  #fff;
+      color: $primary-color;
+    } 
+  } 
 }
 
 .logo {
@@ -25,8 +32,13 @@
   &:before {
     content: url(../img/icons/cloud-logo.svg);
     margin-right: 10px;
+    @include media-breakpoint-down (xs) {
+      margin-right: 5px;
+    }
   }
- 
+  @include media-breakpoint-down (xs) {
+    font-size: 16px;
+  }
 }
 
 .menu {

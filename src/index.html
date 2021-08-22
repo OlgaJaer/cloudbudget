@@ -17,12 +17,12 @@
     <section id="hero" class="hero">
       <div class="container">
         <header class="header">
-          <div class="header__col">
+          <div class="header__col header__col_left">
             <div class="logo">
               CloudBudget
             </div>
           </div>
-          <div class="header__col">
+          <div class="header__col header__col_center">
             <nav class="menu">
               <div class="menu__icon icon-menu">
                 <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,8 +50,8 @@
               </ul>
             </nav>
           </div>
-          <div class="header__col">
-            <button class="header__btn">login</button>
+          <div class="header__col header__col_right">
+            <button class="header__btn btn transition">login</button>
           </div>
         </header>
         <div class="hero__content">
@@ -60,7 +60,7 @@
             <div class="hero__text">Cloud budget management for everyone. Only<br> €69.95 a Month After a 7 Day Trial
               of<br>
               Up to €4.99</div>
-            <button class="btn btn-white" target="_blank">Sign Up</button>
+            <button class="btn btn_white transition" target="_blank">Sign Up</button>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@
     <section id="overview" class="overview">
       <div class="container">
         <div class="overview__content">
-          <div class="overview__col overview__col-left">
+          <div class="overview__col overview__col_left">
             <h2 class="overview__title">Easy to Use Cloud Budget Management Software</h2>
             <p class="overview__text">Our software is made so you can access and manage your budget and expenses online
               at any time from any device. It provides detailed income and expense reports with graphs so you can
@@ -79,8 +79,8 @@
           </div>
 
           <div class="overview__col">
-            <div class="overview__video">
-              <img src="./img/bg/video_bg-software.jpg" alt="">
+            <div class="overview__img">
+              <img src="./img/bg/software.jpg" alt="">
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@
         <h2 class="technology__title">Technology</h2>
         <div class="technology__content">
           <div class="technology__col">
-            <div class="technology__icon technology__icon-cloud">
+            <div class="technology__icon technology__icon_cloud">
               <span class="technology__number">01</span>
             </div>
             <h3 class="technology__subtitle">Cloud Storage</h3>
@@ -136,7 +136,7 @@
           </div>
           <div class="technology__col">
 
-            <div class="technology__icon technology__icon-secure">
+            <div class="technology__icon technology__icon_secure">
               <span class="technology__number">02</span>
             </div>
             <h3 class="technology__subtitle">Secure</h3>
@@ -144,7 +144,7 @@
           </div>
           <div class="technology__col">
 
-            <div class="technology__icon technology__icon-pdf">
+            <div class="technology__icon technology__icon_pdf">
               <span class="technology__number">03</span>
             </div>
             <h3 class="technology__subtitle">PDF Download</h3>
@@ -152,7 +152,7 @@
           </div>
           <div class="technology__col">
 
-            <div class="technology__icon technology__icon-csv">
+            <div class="technology__icon technology__icon_csv">
               <span class="technology__number">04</span>
             </div>
             <h3 class="technology__subtitle">CSV Download</h3>
@@ -164,7 +164,7 @@
     <section id="download" class="download">
       <div class="container">
         <div class="download__content">
-          <div class="download__col download__col-left">
+          <div class="download__col download__col_left">
             <h2 class="download__title">Stay focused on saving money</h2>
             <p class="download__text">It is important to stay focused on saving money in any way you can. We help you
               monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to
@@ -172,20 +172,44 @@
             <div class="download__links">
               <ul class="download__links-list">
                 <li class="download__links-item">
-                  <a class="download__link download__link--google" href="https://play.google.com/store" target="_blank">
-                    <div class="download__icon download__icon--google"></div>
-                  </a>
-                </li>
-                <li class="download__links-item">
-                  <a class="download__link download__link--app" href="https://www.apple.com/app-store/" target="_blank">
-                    <div class="download__icon download__icon--appstore"></div>
+                  <a class="download__link transition" href="https://play.google.com/store"
+                    target="_blank">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3 3.71815V28.2807C3.00016 28.3339 3.01606 28.386 3.04569 28.4303C3.07532 28.4746 3.11737 28.5091 3.16656 28.5296C3.21575 28.5501 3.2699 28.5556 3.32222 28.5455C3.37453 28.5353 3.42268 28.5099 3.46062 28.4725L16.25 16L3.46062 3.52628C3.42268 3.48886 3.37453 3.46349 3.32222 3.45333C3.2699 3.44317 3.21575 3.44868 3.16656 3.46917C3.11737 3.48966 3.07532 3.52422 3.04569 3.56852C3.01606 3.61281 3.00016 3.66486 3 3.71815Z"
+                        fill="white" />
+                      <path
+                        d="M21.6125 10.875L5.57627 2.04L5.56627 2.03438C5.29002 1.88438 5.02752 2.25813 5.25377 2.47563L17.8244 14.4956L21.6125 10.875Z"
+                        fill="white" />
+                      <path
+                        d="M5.25499 29.5244C5.02749 29.7419 5.28999 30.1156 5.56749 29.9656L5.57749 29.96L21.6125 21.125L17.8244 17.5031L5.25499 29.5244Z"
+                        fill="white" />
+                      <path
+                        d="M28.0863 14.4375L23.6081 11.9713L19.3975 16L23.6081 20.0269L28.0863 17.5625C29.3044 16.8894 29.3044 15.1106 28.0863 14.4375Z"
+                        fill="white" />
+                    </svg>
 
+                    </svg>
                   </a>
                 </li>
                 <li class="download__links-item">
-                  <a class="download__link download__link--windows"
+                  <a class="download__link transition" href="https://www.apple.com/app-store/"
+                    target="_blank">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14 0C6.26625 0 0 6.26625 0 14C0 21.7337 6.26625 28 14 28C21.7337 28 28 21.7337 28 14C28 6.26625 21.7337 0 14 0ZM8.6875 20.1181C8.60159 20.2647 8.47861 20.386 8.33094 20.4699C8.18327 20.5538 8.0161 20.5974 7.84625 20.5963C7.67314 20.5978 7.50303 20.551 7.355 20.4613C7.24478 20.3974 7.14826 20.3124 7.07098 20.2111C6.9937 20.1098 6.93718 19.9943 6.90466 19.8711C6.87214 19.748 6.86426 19.6196 6.88148 19.4934C6.8987 19.3672 6.94068 19.2456 7.005 19.1356L7.96062 17.5469C8.00892 17.4649 8.07782 17.3969 8.16048 17.3498C8.24315 17.3026 8.33671 17.2779 8.43188 17.2781H8.57312C9.26625 17.2781 9.75125 17.695 9.8925 18.0987L8.6875 20.1181ZM16.7781 16.9931L10.52 17H6.36063C6.22976 17.0006 6.10015 16.9745 5.97965 16.9235C5.85915 16.8724 5.75027 16.7974 5.65963 16.7031C5.56898 16.6087 5.49845 16.4968 5.45232 16.3744C5.40618 16.2519 5.38541 16.1214 5.39125 15.9906C5.41125 15.4656 5.86937 15.0681 6.39125 15.0681H9.40625L12.9806 8.98375L11.8231 7.01188C11.5625 6.5625 11.6781 5.97 12.125 5.6875C12.2352 5.61625 12.3586 5.56801 12.4879 5.54569C12.6172 5.52337 12.7497 5.52742 12.8773 5.5576C13.005 5.58779 13.1253 5.64348 13.2309 5.72133C13.3365 5.79918 13.4253 5.89759 13.4919 6.01062L14.1106 7.0675H14.1175L14.7369 6.01062C14.8036 5.89817 14.8922 5.8003 14.9975 5.72284C15.1028 5.64538 15.2227 5.58991 15.3499 5.55976C15.4771 5.52961 15.609 5.52538 15.7379 5.54732C15.8668 5.56927 15.9899 5.61694 16.1 5.6875C16.5444 5.97 16.6588 6.5625 16.3962 7.01375L15.2388 8.98563L14.1138 10.9038L11.6706 15.07V15.0769H15.2712C15.7225 15.0769 16.2881 15.3194 16.5169 15.7094L16.5369 15.75C16.7388 16.0931 16.8531 16.3288 16.8531 16.6719C16.8498 16.7833 16.825 16.893 16.78 16.995L16.7781 16.9931ZM21.6375 17H19.9431V17.0069L21.1819 19.1138C21.3151 19.3356 21.3559 19.601 21.2955 19.8526C21.235 20.1043 21.0782 20.3222 20.8587 20.4594C20.7066 20.5521 20.5319 20.6012 20.3538 20.6012C20.1844 20.6012 20.0179 20.5573 19.8705 20.4738C19.723 20.3904 19.5997 20.2702 19.5125 20.125L17.6819 17.0088L16.5444 15.0713L15.0769 12.5625C14.8643 12.2043 14.7488 11.7969 14.7417 11.3804C14.7345 10.9639 14.8361 10.5528 15.0362 10.1875C15.3262 9.67562 15.5481 9.54125 15.5481 9.54125L18.8125 15.0625H21.6194C22.1444 15.0625 22.595 15.4663 22.6194 15.9844C22.6244 16.1161 22.6028 16.2475 22.5558 16.3707C22.5088 16.4938 22.4374 16.6062 22.3458 16.7011C22.2543 16.7959 22.1445 16.8713 22.0231 16.9227C21.9017 16.974 21.7712 17.0003 21.6394 17H21.6375Z"
+                        fill="white" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="download__links-item">
+                  <a class="download__link transition"
                     href="https://www.microsoft.com/en-us/store/apps/windows" target="_blank">
-                    <div class="download__icon download__icon--windows"></div>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M0 3.449L9.75 2.1V11.551H0V3.449ZM10.949 1.949L24 0V11.4H10.949V1.949ZM0 12.6H9.75V22.051L0 20.699V12.6ZM10.949 12.6H24V24L11.1 22.199"
+                        fill="white" />
+                    </svg>
                   </a>
                 </li>
               </ul>
@@ -193,8 +217,8 @@
           </div>
 
           <div class="download__col">
-            <div class="download__video">
-              <img src="./img/bg/video_bg-tech.jpg" alt="">
+            <div class="download__img">
+              <img src="./img/bg/tech.jpg" alt="">
             </div>
           </div>
         </div>
@@ -203,7 +227,7 @@
     <section id="contact" class="contact">
       <div class="container">
         <div class="contact__content">
-          <div class="contact__col contact__col-left">
+          <div class="contact__col contact__col_left">
             <h2 class="contact__title">Contact</h2>
             <p class="contact__text">Questions or concerns? Just fill out the form below and our support team will get
               back to you within 24 hours</p>
@@ -212,12 +236,12 @@
             <form class="form">
               <div class="form__row">
                 <label>
-                  <input type="text" name="first_name" placeholder="First Name" class="form__first-name"
-                    min="3" required>
+                  <input type="text" name="first-name" placeholder="First Name" class="form__first-name" min="3"
+                    required>
                   <span></span>
                 </label>
                 <label>
-                  <input type="text" name="" placeholder="Last Name" class="form__last-name" min="3" required>
+                  <input type="text" name="last-name" placeholder="Last Name" class="form__last-name" min="3" required>
                   <span></span>
                 </label>
 
@@ -233,7 +257,7 @@
                   <input type="text" name="question" placeholder="Your question" class="form__question">
                 </label>
               </div>
-              <button type="submit" class="btn btn-red">submit now</button>
+              <button type="submit" class="btn btn_red transition">submit now</button>
 
             </form>
           </div>
@@ -286,19 +310,29 @@
             </div>
             <div class="contacts__social">
               <ul class="social">
-                <li class="social__item">
-                  <a href="http://" class="social__link social__link-fb" target="_blank" rel="noopener noreferrer">
-                    <div class="social__icon social__icon-fb"></div>
+                <li class="social__item transition">
+                  <a href="http://facebook.com" class="social__link" target="_blank" rel="noopener noreferrer">
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M6.5 0.166626H4.75C3.97645 0.166626 3.23458 0.473917 2.6876 1.0209C2.14062 1.56788 1.83333 2.30974 1.83333 3.08329V4.83329H0.0833302V7.16663H1.83333V11.8333H4.16666V7.16663H5.91666L6.5 4.83329H4.16666V3.08329C4.16666 2.92858 4.22812 2.78021 4.33752 2.67081C4.44692 2.56142 4.59529 2.49996 4.75 2.49996H6.5V0.166626Z"
+                        fill="#101010" />
+                    </svg>
                   </a>
                 </li>
-                <li class="social__item">
-                  <a href="http://" class="social__link social__link-in" target="_blank" rel="noopener noreferrer">
-                    <div class="social__icon social__icon-in"></div>
+                <li class="social__item transition">
+                  <a href="http://linkedin.com" class="social__link" target="_blank" rel="noopener noreferrer">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.33334 4.66663C10.2616 4.66663 11.1518 5.03538 11.8082 5.69175C12.4646 6.34813 12.8333 7.23837 12.8333 8.16663V12.25H10.5V8.16663C10.5 7.85721 10.3771 7.56046 10.1583 7.34167C9.9395 7.12288 9.64276 6.99996 9.33334 6.99996C9.02392 6.99996 8.72717 7.12288 8.50838 7.34167C8.28959 7.56046 8.16667 7.85721 8.16667 8.16663V12.25H5.83334V8.16663C5.83334 7.23837 6.20208 6.34813 6.85846 5.69175C7.51484 5.03538 8.40508 4.66663 9.33334 4.66663Z" fill="#101010"/>
+                      <path d="M1.16667 5.25H3.5V12.25H1.16667V5.25Z" fill="#101010"/>
+                      <path d="M2.33333 3.49996C2.97767 3.49996 3.5 2.97763 3.5 2.33329C3.5 1.68896 2.97767 1.16663 2.33333 1.16663C1.689 1.16663 1.16667 1.68896 1.16667 2.33329C1.16667 2.97763 1.689 3.49996 2.33333 3.49996Z" fill="#101010"/>
+                      </svg>
                   </a>
                 </li>
-                <li class="social__item">
-                  <a href="http://" class="social__link social__link-twitter" target="_blank" rel="noopener noreferrer">
-                    <div class="social__icon social__icon-twitter"></div>
+                <li class="social__item transition">
+                  <a href="http://" class="social__link" target="_blank" rel="noopener" >
+                    <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.4167 0.750006C12.8581 1.14403 12.2396 1.4454 11.585 1.64251C11.2337 1.23855 10.7668 0.952243 10.2474 0.822297C9.7281 0.69235 9.18137 0.725037 8.68122 0.915938C8.18106 1.10684 7.75159 1.44674 7.45091 1.88967C7.15022 2.33261 6.99283 2.8572 7 3.39251V3.97584C5.97487 4.00242 4.95908 3.77506 4.04309 3.31402C3.1271 2.85297 2.33935 2.17254 1.75 1.33334C1.75 1.33334 -0.583331 6.58334 4.66667 8.91667C3.46531 9.73215 2.03418 10.141 0.583336 10.0833C5.83333 13 12.25 10.0833 12.25 3.37501C12.2495 3.21252 12.2338 3.05044 12.2033 2.89084C12.7987 2.30371 13.2188 1.56242 13.4167 0.750006Z" fill="#101010"/>
+                      </svg>
                   </a>
                 </li>
               </ul>
@@ -322,7 +356,7 @@
 
     <div class="fixed-menu__container">
       <ul class="fixed-menu__list">
-        <li class="fixed-menu__item fixed-menu__item--disable">
+        <li class="fixed-menu__item fixed-menu__item_disable">
           <a href="#overview" class="fixed-menu__item-link">overview</a>
         </li>
         <li class="fixed-menu__item ">
